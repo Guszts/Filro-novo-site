@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;650;700;800;850;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-page-bg: #D7D7D5;
+  --color-shell-bg: #F8F8F5;
+  --color-black: #050505;
+  --color-off-black: #111111;
+  --color-text: #050505;
+  --color-muted: #767676;
+  --color-orange: #FF5A14;
+  --color-orange-hover: #E84F0F;
+  --color-beige: #E8E1D3;
+  --color-beige-light: #EFE8DA;
+  --color-yellow: #F5F28A;
+  --color-white: #FFFFFF;
+  --color-border: rgba(5, 5, 5, 0.92);
+  --color-border-soft: rgba(5, 5, 5, 0.22);
+  --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.10);
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+@theme {
+  --font-sans: "Inter", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-page-bg: var(--color-page-bg);
+  --color-shell-bg: var(--color-shell-bg);
+  --color-black: var(--color-black);
+  --color-off-black: var(--color-off-black);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-orange: var(--color-orange);
+  --color-orange-hover: var(--color-orange-hover);
+  --color-beige: var(--color-beige);
+  --color-beige-light: var(--color-beige-light);
+  --color-yellow: var(--color-yellow);
+  --color-white: var(--color-white);
+  --color-border-dark: var(--color-border);
+  --color-border-soft: var(--color-border-soft);
+}
+
+body {
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+/* Custom rail pattern */
+.rail-pattern {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(5,5,5,0.55) 0px,
+    rgba(5,5,5,0.55) 4px,
+    transparent 4px,
+    transparent 17px
+  );
+}
